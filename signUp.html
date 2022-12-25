@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>sign up</title>
+        <style>
+           #close:hover{
+            cursor: pointer;        
+           }
+        </style>
+    </head>
+    <body>
+        <h1>sign up form</h1>
+        <button onclick="document.getElementById('div0').style.display='block'"
+        style="width:auto;">Sign Up</button>
+
+        <div style="display: none;" id="div0">
+        
+            <span id="close" onclick="document.getElementById('div0').style.display='none' 
+            "title="Close Modal">&times;</span>   
+            <!-- class="close"  -->
+          <form>
+            <div>
+                <h2>sign up</h2>
+                <p>enter your info</p>
+                <hr>
+                <label for="email01">e-mail</label>
+                <input  type="text" placeholder="enter email" name="email01" required>
+                <hr>
+                <label for="pass">password</label>
+                <input  type="password" placeholder="enter password" name="pass" required>
+                <hr>
+                <label for="repass">Repeat password</label>
+                <input  type="password" placeholder="repeat password" name="repass" required>
+                <label>
+                    <input type="checkbox" checked="checked">remember me
+                </label>
+
+
+                <div>
+                    <button type="button" onclick="document.getElementById('div0').style.display='none'" >Cancel</button>
+                    <button type="submit">Sign Up</button>
+
+                </div>
+            </div>
+          </form>
+        </div>
+
+
+        <script>
+            var modal = document.getElementById('div0');
+             window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    </body>
+</html>
