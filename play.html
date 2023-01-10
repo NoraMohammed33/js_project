@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" href="play.css"/>
+    </head>
+    <body>
+        <div id="dispScore"></div>
+   
+   <img src="goal.png" id="goal" ondrop= "drop(event)" ondragover="allow(event)"> 
+
+<div id="status"></div>
+<img id="ball" ondragstart= "drag(event)" draggable="true" src="ball.png">
+
+
+
+<div id="player" onclick="kick()">
+    <div  class="body">
+        <div class="hair">
+            <div class="hair-right"></div>
+            <div class="hear"></div>
+        </div>
+        <div class="head"></div>
+        <div class="main">
+            <div class="arm-left"></div>
+            <div class="arm-right"></div>
+    </div>
+    <div class="bottom"></div>
+    <ul>
+        <li id="toKick">
+            <div class="leg"></div>
+            <div class="socks"></div>
+            <div  class="shoes"></div>
+        </li>
+        <li class="right">
+            <div class="leg"></div>
+            <div class="socks"></div>
+            <div class="shoes"></div>
+        </li>
+    </ul>
+    </div>
+
+</div>
+    <script src="play.js"></script>
+    </body>
+</html>
