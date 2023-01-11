@@ -2,18 +2,25 @@
 <html>
 	<head>
         <link rel="stylesheet" href="play.css"/>
+
     </head>
     <body>
         <div id="dispScore"></div>
    
+
+       <audio id="aud" src="football-song.mp3" autoplay>  </audio>
+       <img  onclick="audioPlay()"> 
+       <img onclick="audioPause()"> 
+       
+
    <img src="goal.png" id="goal" ondrop= "drop(event)" ondragover="allow(event)"> 
 
 <div id="status"></div>
-<img id="ball" ondragstart= "drag(event)" draggable="true" src="ball.png">
+<img  id="ball" ondragstart= "drag(event)" draggable="true" src="ball.png">
 
 
 
-<div id="player" onclick="kick()">
+<div id="player" onclick="move()">
     <div  class="body">
         <div class="hair">
             <div class="hair-right"></div>
