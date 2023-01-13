@@ -34,7 +34,7 @@ function drag(event) {
   function FBsound_play()
   {
    document.getElementById("FBsound").play();
-   document.getElementById("FBsound-img").src='Muted.jpg';
+   document.getElementById("FBsound-img").src="Football/Muted.jpg";
   }
 
   
