@@ -1,8 +1,18 @@
 body{
     background-image:url(ground.jpg);
-
 }
-
+#FBsound-img{
+    height: 50px;
+    width: 50px;
+   position:relative;
+  /* margin: 50px; */
+    border-radius: 40px;
+    /* transform: 4s; */
+ }
+/* #FBsound-img:hover{
+    height: 70px;
+    width: 70px;
+} */ */
 #status{
     height: 600;
     width: 500%;
@@ -41,14 +51,11 @@ bottom: 200;
 
 @keyframes ballMove{
     0%{left:950px;}
-    100%{left:160px;}    
-    /* 100%{left:50px;} */
+    100%{left:160px;}   
 }
- 
  #toKick:hover{
     transform: rotateX(50deg); 
     transform-origin:left top;
-
  }
  #player{
     position: relative;
