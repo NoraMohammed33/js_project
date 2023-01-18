@@ -30,7 +30,7 @@ resetBtn.addEventListener("click",resetGame);
 
 gameStart();
 
-
+//every time you start a game 
 function gameStart(){
  
   running = true;
@@ -51,13 +51,14 @@ function nextTick(){
         checkGameOver();
         nextTick();
 
-    },75);
+    },75); // 75 it is represnted to speed of the snake 
   }
   else{
     displayGameOver();
   }
 
 };
+ 
 function clearBoard(){
     ctx.fillStyle = boardBackground;
     ctx.fillRect(0, 0, gameWidth, gameHeight);
@@ -100,6 +101,8 @@ function drawSnake(){
         ctx.strokeRect(snakePart.x, snakePart.y, unitSize, unitSize);
     })
 };
+
+// the events of pressed in keyboard
 function changeDirection(event){
    const keyPressed = event.keyCode;
    //console.log(keyPressed)//Ascii code of the Arrow keyBoards
